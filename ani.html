@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Animation-css</title>
+ <style>
+ section{
+  display: flex;
+  justify-content: space-around;
+ }
+ .s1{
+  border:1px ;
+  animation-name: rotate;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 100;
+}
+@keyframes rotate{
+ 0%{
+  transform: rotate(0deg);
+
+ }
+ 25%{
+  transform: rotate(30deg);
+
+ }
+ 50%{
+  transform: rotate(60deg);
+
+ }
+ 75%{
+  transform: rotate(90deg);
+
+ }
+ 100%{
+         transform: rotate(180deg);
+        
+ }
+
+}
+.s2{
+ border: 1px;
+  animation-name: rotate2;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 100;
+}
+@keyframes rotate2{
+ 0%{
+  transform: rotate(0deg);
+
+ }
+ 25%{
+  transform: rotate(-30deg);
+
+ }
+ 50%{
+  transform: rotate(-60deg);
+
+ }
+ 75%{
+  transform: rotate(-90deg);
+
+ }
+ 100%{
+         transform: rotate(-180deg);
+        
+ }
+ }
+
+</style>
+</head>
+<body>
+<section>
+ <div class="s1"><img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png"></div>
+
+ <div class="s2"><img src="https://www.iconpacks.net/icons/2/free-settings-icon-3110-thumb.png"></div>
+</section>
+</body>
+</html>
+
+
+
